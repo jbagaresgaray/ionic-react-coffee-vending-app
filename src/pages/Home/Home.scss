@@ -1,0 +1,64 @@
+.HomePage {
+  &_Content {
+    ion-slides {
+      margin-top: 100px;
+      padding-bottom: 30px;
+
+      .swiper-pagination {
+        --bullet-background-active: var(--ion-color-coffee);
+
+        .swiper-pagination-bullet-active {
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      ion-slide {
+        display: block;
+
+        .AppCoffeeCard {
+          width: 165px;
+          height: 165px;
+          margin: 0;
+          margin-inline: 8px;
+        }
+      }
+    }
+  }
+  &_Header {
+    font-size: 3em;
+    line-height: 1em;
+    color: var(--ion-color-coffee);
+    padding-left: 16px;
+    font-family: var(--ion-font-family2);
+    font-weight: 400;
+    width: 80%;
+  }
+  &_ImageBanner {
+    position: absolute;
+
+    top: 95px;
+    right: -90px;
+
+    img {
+      width: 300px;
+    }
+  }
+  &_Footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: calc(46px + var(--ion-safe-area-bottom));
+
+    &_Container {
+      padding-top: 38px;
+      padding-right: 16px;
+      padding-left: 16px;
+
+      .AppButton {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

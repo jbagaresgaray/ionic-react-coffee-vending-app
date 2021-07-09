@@ -1,0 +1,20 @@
+.ChoosePage {
+  &_Content {
+  }
+  &_Header {
+    font-size: 3em;
+    line-height: 1em;
+    color: var(--ion-color-coffee);
+    padding-left: 16px;
+    font-family: var(--ion-font-family2);
+    font-weight: 400;
+    width: 80%;
+  }
+  &_Stepper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &_Swiper {
+    padding-top: 32px;
+  }
+}

@@ -1,0 +1,72 @@
+.LoginPage {
+  background-image: url("../../assets/landing.png");
+  background-position: -95px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  ion-header {
+    ion-toolbar {
+      ion-back-button {
+        --color: #fff;
+      }
+
+      --padding-start: 32px;
+      --background: transparent;
+    }
+  }
+
+  &_Header {
+    font-size: 4em;
+    line-height: 1em;
+    color: #fff;
+    padding-top: calc(24px + var(--ion-safe-area-top));
+    padding-left: 16px;
+    font-family: var(--ion-font-family2);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &_Content {
+    --background: transparent;
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }
+  &_Form {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    ion-item {
+      --padding-start: 0px;
+      --background: transparent;
+      padding-bottom: 34px;
+      ion-icon {
+        color: #fff;
+      }
+    }
+
+    &_Text {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+  }
+  &_Footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: calc(56px + var(--ion-safe-area-bottom));
+
+    &_Container {
+      padding-top: 38px;
+      padding-right: 16px;
+      padding-left: 16px;
+
+      .AppButton {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

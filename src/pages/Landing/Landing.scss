@@ -1,0 +1,47 @@
+.LandingPage {
+  &_Content {
+    --background: transparent;
+    background-image: url("../../assets/landing.png");
+    background-position: -95px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }
+  &_Header {
+    font-size: 4em;
+    line-height: 1em;
+    color: #fff;
+    padding-top: calc(56px + var(--ion-safe-area-top));
+    padding-left: 16px;
+    font-family: var(--ion-font-family2);
+    font-weight: 400;
+  }
+
+  &_Footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: calc(56px + var(--ion-safe-area-bottom));
+
+    &_Container {
+      padding-top: 38px;
+      padding-right: 16px;
+      padding-left: 16px;
+
+      .AppButton {
+        margin-bottom: 12px;
+      }
+
+      &_Text {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

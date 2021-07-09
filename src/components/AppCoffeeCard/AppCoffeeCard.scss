@@ -1,0 +1,33 @@
+.AppCoffeeCard {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+
+  ion-card-header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    ion-card-subtitle {
+      text-transform: unset;
+      color: #fff;
+      text-align: left;
+      font-weight: 400;
+    }
+  }
+
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 200px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

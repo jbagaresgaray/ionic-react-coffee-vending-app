@@ -1,36 +1,69 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import { Redirect, Route } from "react-router-dom";
+import {
+  IonApp,
+  IonRouterOutlet,
+  mdTransitionAnimation,
+  setupConfig,
+} from "@ionic/react";
+import { arrowBackOutline } from "ionicons/icons";
+import { IonReactRouter } from "@ionic/react-router";
+import SwiperCore, {
+  Controller,
+  EffectCoverflow,
+  EffectFade,
+  Lazy,
+  Navigation,
+  Pagination,
+  Parallax,
+  Scrollbar,
+  Thumbs,
+} from "swiper";
 
-/* Core CSS required for Ionic components to work properly */
-import '@ionic/react/css/core.css';
-
-/* Basic CSS for apps built with Ionic */
-import '@ionic/react/css/normalize.css';
-import '@ionic/react/css/structure.css';
-import '@ionic/react/css/typography.css';
-
-/* Optional CSS utils that can be commented out */
-import '@ionic/react/css/padding.css';
-import '@ionic/react/css/float-elements.css';
-import '@ionic/react/css/text-alignment.css';
-import '@ionic/react/css/text-transformation.css';
-import '@ionic/react/css/flex-utils.css';
-import '@ionic/react/css/display.css';
+import Home from "./pages/Home/Home";
+import LandingPage from "./pages/Landing/Landing";
+import LoginPage from "./pages/Login/Login";
+import ChoosePage from "./pages/Choose/Choose";
 
 /* Theme variables */
-import './theme/variables.css';
+import "./theme/shared.scss";
+import "./theme/variables.scss";
+
+setupConfig({
+  backButtonIcon: arrowBackOutline,
+  backButtonText: "",
+  navAnimation: mdTransitionAnimation,
+});
+
+SwiperCore.use([
+  Controller,
+  Pagination,
+  Scrollbar,
+  Navigation,
+  Thumbs,
+  Lazy,
+  EffectFade,
+  EffectCoverflow,
+  Parallax,
+]);
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
+        <Route exact path="/landing">
+          <LandingPage />
+        </Route>
+        <Route exact path="/login">
+          <LoginPage />
+        </Route>
         <Route exact path="/home">
           <Home />
         </Route>
+        <Route exact path="/choose">
+          <ChoosePage />
+        </Route>
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/landing" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

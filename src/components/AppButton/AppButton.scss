@@ -1,0 +1,14 @@
+.AppButton {
+  font-size: 16px;
+  font-weight: 400;
+  height: 3.8em;
+
+  &.AppButtonCoffee {
+    --background: linear-gradient(
+      160deg,
+      rgba(72, 43, 10, 1) 0%,
+      rgba(14, 9, 2, 1) 100%
+    );
+    --background-activated: rgba(14, 9, 2, 1);
+  }
+}
