@@ -1,0 +1,50 @@
+.input-number {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 2px;
+
+  span {
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    display: inline-block;
+    background-color: var(--ion-color-coffee);
+    height: 100%;
+    width: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: -1px;
+  }
+
+  button {
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--ion-color-coffee-tint);
+    transition: background-color 0.2s ease;
+
+    &:nth-of-type(1) {
+      padding-right: 20px;
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 20px;
+    }
+
+    &:active {
+      background-color: var(--ion-color-coffee-shade);
+    }
+  }
+}

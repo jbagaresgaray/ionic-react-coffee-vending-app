@@ -1,4 +1,10 @@
 .FlavorSlides {
+  height: 100%;
+
+  .swiper-slide {
+    flex-direction: column;
+  }
+
   .FlavorSlide {
     background-color: #efefef;
     border-radius: 100%;
@@ -8,5 +14,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .swiper-slide-active {
+    .FlavorSlideName {
+      h2 {
+        font-size: 1.6em !important;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .FlavorSlideName {
+    h2 {
+      font-size: 1.3em;
+      line-height: 1em;
+      color: var(--ion-color-coffee);
+      font-weight: 600;
+      text-align: center;
+    }
   }
 }

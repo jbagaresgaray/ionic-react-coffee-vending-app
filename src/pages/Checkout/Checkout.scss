@@ -1,0 +1,27 @@
+.CheckoutPage {
+  &_Content {
+    ion-list {
+      ion-item {
+        ion-label {
+          color: var(--ion-color-coffee) !important;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &_Header {
+    font-size: 3em;
+    line-height: 1em;
+    color: var(--ion-color-coffee);
+    padding-left: 16px;
+    font-family: var(--ion-font-family2);
+    font-weight: 400;
+    width: 80%;
+    text-transform: uppercase;
+  }
+  &_Container {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+  }
+}

@@ -27,6 +27,7 @@ import ChoosePage from "./pages/Choose/Choose";
 /* Theme variables */
 import "./theme/shared.scss";
 import "./theme/variables.scss";
+import CheckoutPage from "./pages/Checkout/Checkout";
 
 setupConfig({
   backButtonIcon: arrowBackOutline,
@@ -61,6 +62,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/choose">
           <ChoosePage />
+        </Route>
+        <Route exact path="/checkout">
+          <CheckoutPage />
         </Route>
         <Route exact path="/">
           <Redirect to="/landing" />

@@ -1,15 +1,18 @@
 .HomePage {
   &_Content {
     ion-slides {
-      margin-top: 100px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: calc(90px + var(--ion-safe-area-bottom));
       padding-bottom: 30px;
 
       .swiper-pagination {
-        --bullet-background-active: var(--ion-color-coffee);
-
         .swiper-pagination-bullet-active {
           width: 10px;
           height: 10px;
+          background: var(--ion-color-coffee);
         }
       }
 
@@ -33,10 +36,10 @@
     font-family: var(--ion-font-family2);
     font-weight: 400;
     width: 80%;
+    position: fixed;
   }
   &_ImageBanner {
-    position: absolute;
-
+    position: fixed;
     top: 95px;
     right: -90px;
 
