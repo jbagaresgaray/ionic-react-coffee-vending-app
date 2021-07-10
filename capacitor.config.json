@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "ionic-react-coffee-vending-app",
-	"webDir": "build",
-	"bundledWebRuntime": false
+  "appId": "io.ionic.starter",
+  "appName": "ionic-react-coffee-vending-app",
+  "webDir": "build",
+  "bundledWebRuntime": false
 }

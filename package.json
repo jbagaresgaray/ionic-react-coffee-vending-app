@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^3.1.1",
     "@capacitor/app": "1.0.2",
-    "@capacitor/core": "3.1.1",
+    "@capacitor/core": "^3.1.1",
     "@capacitor/haptics": "1.0.2",
+    "@capacitor/ios": "^3.1.1",
     "@capacitor/keyboard": "1.0.2",
     "@capacitor/status-bar": "1.0.2",
     "@ionic/react": "^5.5.0",
@@ -69,7 +71,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.1.1",
+    "@capacitor/cli": "^3.1.1",
     "@types/react-rangeslider": "^2.2.4"
   },
   "description": "An Ionic project"
