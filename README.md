@@ -8,7 +8,7 @@
 
 ## Youtube URL
 
-[![Ionic React Movies 2.0](video.gif)](https://www.youtube.com/watch?v=TAGyxWssyVA)
+[![Ionic React Movies 2.0](video.gif)](https://www.youtube.com/watch?v=bTojbaVRJSA)
 
 
 ## Demo URL
